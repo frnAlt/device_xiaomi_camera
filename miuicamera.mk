@@ -27,7 +27,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
      $(CAMERA_PATH)/configs/device_features/alioth.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/alioth.xml \
      $(CAMERA_PATH)/configs/device_features/aliothin.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/aliothin.xml \
-     $(CAMERA_PATH)/configs/device_features/pipa.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/pipa.xml
+     $(CAMERA_PATH)/configs/device_features/pipa.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/pipa.xml \
+     $(CAMERA_PATH)/configs/device_features/sunstone.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/sunstone.xml \
+     $(CAMERA_PATH)/configs/device_features/moonstone.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/moonstone.xml \
+     $(CAMERA_PATH)/configs/device_features/stone.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/stone.xml
 
 # Shims
 PRODUCT_PACKAGES += \
@@ -74,9 +77,9 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
     $(CAMERA_PATH)/sepolicy/misys/public
 
-# Qualcomm Gralloc
-PRODUCT_PACKAGES += \
-     gralloc.qcom
+# Qualcomm Gralloc (handled by device tree graphics allocator)
+# PRODUCT_PACKAGES += \
+#      gralloc.qcom
 
 # MiSys HIDL deps
 PRODUCT_PACKAGES += \
