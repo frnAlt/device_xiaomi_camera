@@ -5,7 +5,7 @@ Prebuilt modded MIUI/Leica Camera 5.0 for Mi Pad 6 (Pipa), to include in custom 
 ### How to use?
 
 1. Clone this repo to `device/xiaomi/camera`
-2. Clone https://gitlab.com/CuriousNom/vendor_xiaomi_camera.git to 'vendor/xiaomi/camera'
+2. Clone [ https://github.com/frnAlt/vendor_xiaomi_camera] to 'vendor/xiaomi/camera'
 3. Inherit it from `device.mk` in device tree:
 ```
 # Camera
